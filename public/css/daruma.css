@@ -1,0 +1,86 @@
+/* Practical CSS Animations Workshop */
+/* CSS */
+/* Add your CSS style rules here */
+
+
+/* CSS Normalization code */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+/* CSS Normalization code */
+
+
+html {
+  font-size: 18px;
+}
+@media (min-height: 540px) and (min-width: 680px) {
+  font-size: 24px;
+}
+@media (min-height: 680px) and (min-width: 1140px) {
+  html {
+    font-size: 32px;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {font-size: 3.500rem;}
+h2 {font-size: 3.000rem;}
+h3 {font-size: 2.500rem;}
+h4 {font-size: 2.000rem;}
+h5 {font-size: 1.000rem;}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #111;
+  line-height: 1.1;
+  margin: 0 0 0.25em;
+}
+
+.Slide {
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 30px;
+  overflow-x: hidden;
+}
+.Slide > * {
+  text-align: left;
+  width: 100%;
+}
+@media (min-width: 680px) {
+  .Slide > * {
+    max-width: 60%;
+  }
+}
+
+
+:not(div).ax-List > * {
+  display: inline-block;
+}
+
+.Daruma {
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+}
+
+
+/* Utilities */
+.tx-300 {
+  font-weight: 300;
+}
